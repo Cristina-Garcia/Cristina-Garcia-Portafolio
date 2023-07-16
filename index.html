@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Desarrollo Web de Cristina Garcia"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript,React" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Cristina Garcia | Desarrollo Web Front-end</title>
+    <link rel="icon" type="image/x-icon" href="./src/img/icon-grape.png" />
+    <!-- Iconos de Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar flex justify-between items-center p-5 border-b-1 border-b-gray-900"
+      >
+      <a href="/">
+        <img
+          class="header-logo w-8 h-8 aspect-[1/1] object-cover rounded-full max-[480px]:hidden"
+          src="./src/img/mi-foto.jpg"
+          alt="Avatar del propietario del Portafolio"
+        />
+      </a>
+        <div class="button-mode flex items-center">
+          <button class="mr-2 cursor-pointer">
+            <i class="fas fa-moon" id="switch"></i>
+            <!-- <i class="bi bi-moon-fill" id="switch"></i> -->
+          </button>
+          <!-- <span><i class="bi bi-sun"></i></span> -->
+          <div class="navbar-list flex items-center ml-4 max-[480px]:hidden">
+            <ul class="flex gap-5 font-light font-quicksand">
+              <li class="hover:font-semibold"><a href="#">Sobre mí</a></li>
+              <li class="hover:font-semibold"><a href="#">Skills</a></li>
+              <li class="hover:font-semibold"><a href="#">Proyectos</a></li>
+              <li class="hover:font-semibold"><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="hidden max-[480px]:block">
+          <i class="bi bi-list"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="home flex flex-col justify-center items-center bg-banner bg-cover opacity-[0.9] h-80 bg-opacity-50"
+      >
+        <img
+          class="w-32 h-32 aspect-[1/1] object-cover rounded-full"
+          src="./src/img/mi-foto.jpg"
+          alt="Avatar del propietario del portafolio"
+        />
+        <h1
+          class="title font-rubik text-3xl text-white font-medium z-10 max-[480px]:text-center"
+        >
+          Cristina Garcia Reyes
+        </h1>
+      </section>
+      <section class="about bg-Mystical-purple text-center text-black py-5 px-4 border-b-2 border-black">
+        <h2 class="font-techmono font-semibold text-2xl ">Acerca de mí</h2>
+        <p class="font-quicksand my-2 ">
+           Soy Agrónomo en Horticultura Protegida, estudiante de Desarrollo Web
+          Front-end.</br>Mi viaje en el mundo de la tecnología se dió mientras me desempeñaba como Agrónomo, con la falta de pequeños pero significativos programas para agilizar nuestro trabajo. Nació en mí el deseo de crear esas
+          tecnologias.</br> Aunque mi camino profesional comenzó en el campo, mi curiosidad y fascinación por el Desarrollo Front-end me llevó a indagar más y comenzar mi formación.</br> Actualmente la capacidad de dar vida a diseños y transformarlos en interfaces interactivas es lo que más me entusiasma. </br>Mi objetivo como Frontend Developer es
+          combinar mis conocimientos en horticultura con mi pasión por la
+          tecnología para desarrollar aplicaciones web que conecten
+          a las personas con soluciones útiles y significativas.
+        </p>
+      </section>
+      <section
+        class="hobbies bg-Mystical-purple flex flex-col items-center text-black p-5"
+      >
+        <h2 class="font-techmono font-semibold text-2xl">Hobbies</h2>
+        <ul class="flex flex-wrap gap-5 mt-5">
+          <li class="flex flex-col items-center justify-center">
+            <img
+              src="./src/img/libro-abierto.png"
+              alt="Leer libros by Freepik"
+              class="w-8"
+            />
+            <span>Leer</span>
+          </li>
+          <li class="flex flex-col items-center justify-center">
+            <img
+              src="./src/img/cine.png"
+              alt="ver peliculas by Freepik"
+              class="w-8"
+            />
+            <span>Ver películas </span>
+          </li>
+          <li class="flex flex-col items-center justify-center">
+            <img
+              src="./src/img/escucha.png"
+              alt="escuchar musica by Freepik"
+              class="w-8"
+            />
+            <span>Escuchar música</span>
+          </li>
+           <li class="flex flex-col items-center justify-center">
+            <img
+              src="./src/img/cosecha.png"
+              alt="Agricultor by Freepik"
+              class="w-8"
+            />
+            <span>Producir hortalizas</span>
+          </li>
+          <li class="flex flex-col items-center justify-center">
+            <img
+              src="./src/img/dibujar.png"
+              alt="escuchar musica by Freepik"
+              class="w-8"
+            />
+            <span>Dibujar</span>
+          </li>
+          <li class="flex flex-col items-center justify-center">
+            <img
+              src="./src/img/frito.png"
+              alt="cocinar by photo3idea_studio Lineal"
+              class="w-8"
+            />
+            <span>Cocinar </span>
+          </li>
+        </ul>
+      </section>
+      <section class="skills flex flex-col items-center my-5 py-2">
+        <h2 class="font-techmono text-2xl font-semibold">Skills</h2>
+        <ul
+          class="flex flex-wrap gap-5 justify-between p-5 max-[480px]:flex-nowrap max-[480px]:flex-col"
+        >
+          <li class="flex items-center gap-2">
+            <img
+              class="w-8 h-auto"
+              src="./src/img/html.svg"
+              alt="Icono html"
+            /><span>HTML</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img
+              class="w-8 h-auto"
+              src="./src/img/css.svg"
+              alt="icono de css"
+            /><span>CSS</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img
+              class="w-8 h-auto"
+              src="./src/img/javascript.svg"
+              alt="icono de javascript"
+            /><span>JavaScript</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img
+              class="w-8 h-auto"
+              src="./src/img/github-mark.png"
+              alt="Icono de Github"
+            /><span>Github</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img
+              class="w-8 h-auto"
+              src="./src/img/bootstrap.svg"
+              alt="Icono de bootstrap"
+            /><span>Bootstrap</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img
+              class="w-8 h-auto"
+              src="./src/img/tailwind.svg"
+              alt="Icono de Tailwind"
+            /><span>Tailwind</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img
+              class="w-8 h-auto"
+              src="./src/img/react.svg"
+              alt="Icono de Reac"
+            /><span>React</span>
+          </li>
+        </ul>
+      </section>
+      <section
+        class="formacion flex flex-col items-center text-center p-5 mt-5"
+      >
+        <h2 class="font-techmono font-semibold text-2xl">
+          Formación Academica
+        </h2>
+        <div
+          class="flex flex-wrap gap-5 mt-5 max-[480px]:flex-nowrap max-[480px]:flex-col"
+        >
+          <figure class="flex flex-col justify-center items-center">
+            <img
+              class="w-12 h-12"
+              src="./src/img/chapingo.png"
+              alt="Logo de la universidad Autonoma Chapingo"
+            />
+            <p class="text-sm">Horticultura Protegida</p>
+            <span class="text-xs">2017-UACh</span>
+          </figure>
+          <figure class="flex flex-col justify-center items-center">
+            <img
+              class="w-12 h-12"
+              src="./src/img/platzi.png"
+              alt="Logo de Platzi"
+            />
+            <p class="text-sm">Desarrollo web, React</p>
+            <span class="text-xs">2022, 2023-Platzi</span>
+          </figure>
+          <figure class="flex flex-col justify-center items-center">
+            <img
+              class="w-12 h-12"
+              src="./src/img/alura.svg"
+              alt="Logo de Alura"
+            />
+            <p class="text-sm">Desarrollo Front End</p>
+            <span class="text-xs">2023-Alura</span>
+          </figure>
+          <figure class="flex flex-col justify-center items-center">
+            <img
+              class="w-12 h-12"
+              src="./src/img/faxt.png"
+              alt="Logo de Fazt"
+            />
+            <p class="text-sm">JavaScript</p>
+            <span class="text-xs">2023-Fazt</span>
+          </figure>
+          <figure class="flex flex-col justify-center items-center">
+            <img
+              class="w-12 h-12"
+              src="./src/img/midudev.png"
+              alt="Logo de midudev"
+            />
+            <p class="text-sm">React</p>
+            <span class="text-xs">2023-Midudev</span>
+          </figure>
+        </div>
+      </section>
+      <section class="proyectos flex flex-col items-center my-5 py-2">
+        <h2 class="font-techmono font-semibold text-2xl">Mis Proyectos</h2>
+        <div
+          class="proyectos-list flex justify-center flex-wrap gap-10 px-5 mt-2"
+        >
+          <div
+            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          >
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Tip calculator App</h3>
+              <p class="text-sm text-justify pt-2">
+                Aplicación que te ayuda a calcular el monto de propina a pagar
+                de tu preferencia ya sea solo o con acompañantes. Proyecto
+                basado de diseño de Fronted Mentor
+              </p>
+              <div class=" flex items-center justify-center gap-5 mt-2">
+                <a
+                  href="https://github.com/Cristina-Garcia/tip-calculator-app-FM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i></a>
+                <a
+                  href="https://cristina-garcia.github.io/tip-calculator-app-FM/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-laptop-code"></i></a>
+              </div>
+            </div>
+            <figure class="proyect-container-img relative ">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/tip-calculator-app.png"
+                alt="Vista
+              del proyecto tip calculator app"
+              />
+              <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-js scale-150"></i>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <div
+            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          >
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Expense Chart</h3>
+              <p class="text-sm text-justify pt-2">
+                Mostramos con gráficos de Chart.js, datos de gastos. Proyecto
+                basado en diseño de Fronted Mentor
+              </p>
+              <div class=" flex items-center justify-center gap-5 mt-2">
+                <a
+                  href="https://github.com/Cristina-Garcia/expenses-chartFM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i></a>
+                <a
+                  href="https://cristina-garcia.github.io/expenses-chartFM/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-laptop-code"></i></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/expense-chart.png"
+                alt="Vista del proyecto tip calculator app"
+              />
+               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-js scale-150"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          >
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Rick and Morty</h3>
+              <p class="text-sm text-justify pt-2">
+                Mostramos los personajes de las serie Rick and Morty desde una
+                API.
+              </p>
+              <div class=" flex items-center justify-center gap-5 mt-2">
+                <a
+                  href="https://github.com/Cristina-Garcia/react-ricky-and-morty-fazt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i></a>
+                <a
+                  href="https://cristina-garcia.github.io/react-ricky-and-morty-fazt/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-laptop-code"></i></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/Rick-and-morty-API.png"
+                alt="Vista del proyecto tip calculator app"
+              />
+               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-react scale-150"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          >
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Pokedex</h3>
+              <p class="text-sm text-justify pt-2">
+                Conoce más sobre tus pokemones favoritos. Datos recibidos desde
+                la PokeAPI e integración de gráficos de Chart.js. Realizado con
+                LeonidasEsteban
+              </p>
+              <div class=" flex items-center justify-center gap-5 mt-2">
+                <a
+                  href="https://github.com/Cristina-Garcia/pokedexLE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i></a>
+                <a
+                  href="https://cristina-garcia.github.io/pokedexLE/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-laptop-code"></i></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/Pokedex.jpg"
+                alt="Vista del proyecto tip calculator app"
+              />
+               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-js scale-150"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          >
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Tiendita</h3>
+              <p class="text-sm text-justify pt-2">
+                Compra productos de tu preferencia desde la página web de tu
+                tienda favorita. Diseño de LeonidasEsteban
+              </p>
+              <div class=" flex items-center justify-center gap-5 mt-2">
+                <a
+                  href="https://github.com/Cristina-Garcia/Tiendita"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i></a>
+                <a
+                  href="https://cristina-garcia.github.io/Tiendita/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-laptop-code"></i></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img
+                class="w-64"
+                src="./src/img/tiendita.png"
+                alt="Vista del proyecto tip calculator app"
+              />
+               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-js scale-150"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          >
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Encriptador</h3>
+              <p class="text-sm text-justify pt-2">
+                Proyecto de encriptado y desencriptado de palabras o frases con
+                el programa ONE
+              </p>
+              <div class=" flex items-center justify-center gap-5 mt-2">
+                <a
+                  href="https://github.com/Cristina-Garcia/proyecto-encriptador-ONE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i></a>
+                <a
+                  href="https://cristina-garcia.github.io/proyecto-encriptador-ONE/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-laptop-code"></i></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img
+                class="w-64"
+                src="./src/img/encriptador-desencriptador.png"
+                alt="Vista del proyecto tip calculator app"
+              />
+               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-js scale-150"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contacto flex flex-col items-center my-5 py-2 k text-black"
+      >
+        <div class="bg-Mystical-purple w-full text-center p-2">
+          <h2 class="font-techmono font-semibold text-2xl">Contacto</h2>
+          <p class="font-quicksand font-semibold">Tienes alguna idea?</p>
+          <p class="font-quicksand">Hagamosla real!</p>
+        </div>
+        <form
+          action=""
+          class="flex w-[520px] flex-col gap-3 mt-2 max-[768px]:px-5 max-[480px]:w-[320px]"
+        >
+          <input
+            type="text"
+            name="clientName"
+            placeholder="Name"
+            class="p-2 border border-Mystical-purple outline-none"
+          />
+          <input
+            type="mailto"
+            name="email"
+            placeholder="Email"
+            class="p-2 border border-Mystical-purple outline-none"
+          />
+          <textarea
+            name="subject"
+            id=""
+            cols="30"
+            rows="1"
+            placeholder="Subject"
+            class="p-2 border border-Mystical-purple resize-none outline-none"
+          ></textarea>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="message"
+            class="p-2 border border-Mystical-purple resize-none outline-none"
+          ></textarea>
+          <button
+            class="bg-Mystical-purple hover:bg-Back-in-back rounded-md text-white p-2"
+          >
+            Enviar Mensaje
+          </button>
+        </form>
+      </section>
+      <footer
+        class="flex justify-between items-center p-5 bg-Back-in-back text-white max-[480px]:flex-col"
+      >
+        <p class="font-quicksand font-light text-white">
+          Creado por Cristina Garcia (2023)
+        </p>
+        <div class="flex gap-8 max-[480px]:mt-2">
+          <a href="">
+            <i class="fab fa-instagram fa-lg scale-150"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-linkedin fa-lg scale-150"></i>
+          </a>
+          <a href="mailto:gre.cristina20@gmail.com">
+            <i class="far fa-envelope fa-lg scale-150"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-github fa-lg scale-150"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
+</html>
