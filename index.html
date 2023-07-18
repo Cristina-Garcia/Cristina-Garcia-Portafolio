@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript,React" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Cristina Garcia | Desarrollo Web Front-end</title>
-    <link rel="icon" type="image/x-icon" href="./src/img/icon-grape.png" />
+    <link rel="icon" type="image/x-icon" href="./src/img/mi-foto.jpg" />
     <!-- Iconos de Font Awesome -->
     <link
       rel="stylesheet"
@@ -18,40 +18,42 @@
     />
   </head>
   <body>
-    <header>
+    <!-- <div class="observer-root-margin"></div> -->
+    <header class="header  bg-ligth-mode top-0 left-0 w-full z-10 m-0 p-0">
       <nav
-        class="navbar flex justify-between items-center p-5 border-b-1 border-b-gray-900"
+        class="navbar flex justify-between items-center p-5 border-b-1 border-b-gray-900 "
       >
       <a href="/">
         <img
-          class="header-logo w-8 h-8 aspect-[1/1] object-cover rounded-full max-[480px]:hidden"
+          class="header-logo w-8 h-8 aspect-[1/1] object-cover rounded-full"
           src="./src/img/mi-foto.jpg"
           alt="Avatar del propietario del Portafolio"
         />
       </a>
-        <div class="button-mode flex items-center">
-          <button class="mr-2 cursor-pointer">
-            <i class="fas fa-moon" id="switch"></i>
-            <!-- <i class="bi bi-moon-fill" id="switch"></i> -->
+        <div class="flex items-center">
+          <button class="mr-2 cursor-pointer" aria-label="Activar modo oscuro o claro">
+            <i class="fas fa-moon " id="switch"></i>
           </button>
-          <!-- <span><i class="bi bi-sun"></i></span> -->
-          <div class="navbar-list flex items-center ml-4 max-[480px]:hidden">
-            <ul class="flex gap-5 font-light font-quicksand">
-              <li class="hover:font-semibold"><a href="#">Sobre mí</a></li>
-              <li class="hover:font-semibold"><a href="#">Skills</a></li>
-              <li class="hover:font-semibold"><a href="#">Proyectos</a></li>
-              <li class="hover:font-semibold"><a href="#">Contacto</a></li>
+          <div class="navbar-list flex items-center ml-4 ">
+          <button class="open-menu " aria-label="Abrir menu" >
+            <i class="fa-solid fa-bars text-black"></i>
+          </button>
+            <ul class="menu  font-light font-quicksand ">
+              <button class="close-menu" aria-label="Cerrar-menu">
+                <i class="fa-solid fa-xmark "></i>
+              </button>
+              <li class="hover:font-semibold"><a href="#Aboutme" >Sobre mí</a></li>
+              <li class="hover:font-semibold"><a href="#Skills">Skills</a></li>
+              <li class="hover:font-semibold"><a href="#Projects">Proyectos</a></li>
+              <li class="hover:font-semibold"><a href="#Contact">Contacto</a></li>
             </ul>
           </div>
         </div>
-        <a href="#" class="hidden max-[480px]:block">
-          <i class="bi bi-list"></i>
-        </a>
       </nav>
     </header>
-    <main>
+    <main class="max-[480px]:mt-[80px]">
       <section
-        class="home flex flex-col justify-center items-center bg-banner bg-cover opacity-[0.9] h-80 bg-opacity-50"
+        class="home flex flex-col justify-center items-center bg-banner bg-cover p-5 opacity-[0.9] h-80 bg-opacity-50" id="home"
       >
         <img
           class="w-32 h-32 aspect-[1/1] object-cover rounded-full"
@@ -59,12 +61,12 @@
           alt="Avatar del propietario del portafolio"
         />
         <h1
-          class="title font-rubik text-3xl text-white font-medium z-10 max-[480px]:text-center"
+          class="title font-rubik text-3xl text-text-ligth font-medium mt-5 z-10 max-[480px]:text-center"
         >
           Cristina Garcia Reyes
         </h1>
       </section>
-      <section class="about bg-Mystical-purple text-center text-black py-5 px-4 border-b-2 border-black">
+      <section class="about bg-Mystical-purple text-center text-black py-5 px-4 border-b-2 border-black" id="Aboutme">
         <h2 class="font-techmono font-semibold text-2xl ">Acerca de mí</h2>
         <p class="font-quicksand my-2 ">
            Soy Agrónomo en Horticultura Protegida, estudiante de Desarrollo Web
@@ -76,9 +78,10 @@
         </p>
       </section>
       <section
-        class="hobbies bg-Mystical-purple flex flex-col items-center text-black p-5"
+        class="hobbies bg-Mystical-purple flex flex-col items-center text-black p-5" id="hobbies"
       >
         <h2 class="font-techmono font-semibold text-2xl">Hobbies</h2>
+
         <ul class="flex flex-wrap gap-5 mt-5">
           <li class="flex flex-col items-center justify-center">
             <img
@@ -130,7 +133,7 @@
           </li>
         </ul>
       </section>
-      <section class="skills flex flex-col items-center my-5 py-2">
+      <section class="skills flex flex-col items-center my-5 py-2" id="Skills">
         <h2 class="font-techmono text-2xl font-semibold">Skills</h2>
         <ul
           class="flex flex-wrap gap-5 justify-between p-5 max-[480px]:flex-nowrap max-[480px]:flex-col"
@@ -242,7 +245,7 @@
           </figure>
         </div>
       </section>
-      <section class="proyectos flex flex-col items-center my-5 py-2">
+      <section class="proyectos flex flex-col items-center my-5 py-2" id="Projects">
         <h2 class="font-techmono font-semibold text-2xl">Mis Proyectos</h2>
         <div
           class="proyectos-list flex justify-center flex-wrap gap-10 px-5 mt-2"
@@ -475,7 +478,7 @@
         </div>
       </section>
       <section
-        class="contacto flex flex-col items-center my-5 py-2 k text-black"
+        class="contacto flex flex-col items-center my-5 py-2 k text-black" id="Contact"
       >
         <div class="bg-Mystical-purple w-full text-center p-2">
           <h2 class="font-techmono font-semibold text-2xl">Contacto</h2>
@@ -483,39 +486,54 @@
           <p class="font-quicksand">Hagamosla real!</p>
         </div>
         <form
-          action=""
-          class="flex w-[520px] flex-col gap-3 mt-2 max-[768px]:px-5 max-[480px]:w-[320px]"
+        id="form-contact"
+          class="flex w-[520px] flex-col gap-3 mt-2 max-[768px]:px-5 max-[480px]:w-[320px]" autocomplete="on"
         >
+        <div class="input-container  flex flex-col">
           <input
             type="text"
             name="clientName"
             placeholder="Name"
-            class="p-2 border border-Mystical-purple outline-none"
+            class="input-form p-2 border border-Mystical-purple outline-none" required
+            data-type="name"
           />
+          <span class="input-message-alert"></span>
+        </div>
+        <div class="input-container flex flex-col">
           <input
             type="mailto"
             name="email"
             placeholder="Email"
-            class="p-2 border border-Mystical-purple outline-none"
+            class="input-form p-2 border border-Mystical-purple outline-none" required
+            data-type="email"
           />
+          <span class="input-message-alert"></span>
+        </div>
+        <div class="input-container flex flex-col">
           <textarea
             name="subject"
             id=""
-            cols="30"
             rows="1"
             placeholder="Subject"
-            class="p-2 border border-Mystical-purple resize-none outline-none"
+            class="input-form p-2 border border-Mystical-purple resize-none outline-none w-full" required
+            data-type="subject"
           ></textarea>
+          <span class="input-message-alert"></span>
+
+        </div>
+        <div class="input-container flex flex-col">
           <textarea
             name="message"
             id=""
-            cols="30"
             rows="5"
-            placeholder="message"
-            class="p-2 border border-Mystical-purple resize-none outline-none"
+            placeholder="Message"
+            class="input-form p-2 border border-Mystical-purple resize-none outline-none w-full" required
+            data-type="message"
           ></textarea>
+          <span class="input-message-alert"></span>
+        </div>
           <button
-            class="bg-Mystical-purple hover:bg-Back-in-back rounded-md text-white p-2"
+            class="bg-Mystical-purple hover:bg-Back-in-back rounded-md text-white p-2 mt-4" aria-label ="Enviar mensaje"
           >
             Enviar Mensaje
           </button>
@@ -528,16 +546,16 @@
           Creado por Cristina Garcia (2023)
         </p>
         <div class="flex gap-8 max-[480px]:mt-2">
-          <a href="">
+          <a href="" aria-label="Ir al instagram del candidato">
             <i class="fab fa-instagram fa-lg scale-150"></i>
           </a>
-          <a href="">
+          <a href="" aria-label="Ir al linkedIn del candidato">
             <i class="fab fa-linkedin fa-lg scale-150"></i>
           </a>
-          <a href="mailto:gre.cristina20@gmail.com">
+          <a href="mailto:gre.cristina20@gmail.com" aria-label="Enviar correo al candidato">
             <i class="far fa-envelope fa-lg scale-150"></i>
           </a>
-          <a href="">
+          <a href="" aria-label="Ir a ala cuenta de Github del candidato">
             <i class="fab fa-github fa-lg scale-150"></i>
           </a>
         </div>

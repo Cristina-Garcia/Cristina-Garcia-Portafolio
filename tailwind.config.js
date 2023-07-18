@@ -5,6 +5,9 @@ module.exports = {
       colors: {
         'Back-in-back': '#1F1A24',
         'Mystical-purple': '#725f84',
+        'ligth-mode': '#FBFBFE',
+        'dark-mode': '#192229',
+        'text-ligth': '#EFF3F5',
       },
       backgroundImage: {
         banner: "url('../src/img/banner-sun-moon.jpg')",

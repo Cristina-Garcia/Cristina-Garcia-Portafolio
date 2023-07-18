@@ -544,6 +544,10 @@ video {
   z-index: 10;
 }
 
+.m-0{
+  margin: 0px;
+}
+
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -566,16 +570,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
 
 .flex{
   display: flex;
-}
-
-.hidden{
-  display: none;
 }
 
 .aspect-\[1\/1\]{
@@ -685,20 +689,16 @@ video {
   gap: 0.75rem;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-5{
   gap: 1.25rem;
 }
 
-.gap-8{
-  gap: 2rem;
-}
-
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .rounded-full{
@@ -746,6 +746,11 @@ video {
   background-color: rgb(114 95 132 / var(--tw-bg-opacity));
 }
 
+.bg-ligth-mode{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 254 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -761,6 +766,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-0{
+  padding: 0px;
 }
 
 .p-2{
@@ -856,6 +865,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-text-ligth{
+  --tw-text-opacity: 1;
+  color: rgb(239 243 245 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -870,6 +884,11 @@ video {
   outline-offset: 2px;
 }
 
+.blur{
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -878,27 +897,103 @@ video {
   transition-duration: 150ms;
 }
 
-/* .home {
-  background-image: url('../img/banner-sun-moon.jpg');
-  background-repeat: none;
-} */
+header {
+  box-shadow: 0 2px 3px #1f1a24;
+}
 
 .home .title {
   text-shadow: 3px 3px 2px rgba(114, 95, 132, 1);
 }
+
+.menu {
+  display: flex;
+  gap: 10px;
+  transition: opacity 0.3s;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/* Overlay */
 
 a i:hover {
   transform: scale(1.5);
 }
 
 .overlay {
-  background: black;
+  background: #1f1a24;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
 
 .proyect-container-img:hover .overlay {
   opacity: 0.6;
+}
+
+/* .observer-root-margin {
+  pointer-events: none;
+  z-index: 1000;
+  border: 2px solid blue;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 70%;
+} */
+
+/* Form alerts */
+
+.input-container--invalid .input-form {
+  border: 1px solid #d21502;
+}
+
+.input-message-alert {
+  font-size: x-small;
+  color: #d21502;
+}
+
+@media (max-width: 480px) {
+  header {
+    position: fixed;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #1f1a24;
+    color: white;
+    height: 100%;
+    opacity: 0;
+    overflow-y: auto;
+    pointer-events: none;
+  }
+
+  .menu-opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 21px 23px;
+  }
 }
 
 .hover\:bg-Back-in-back:hover{
@@ -922,12 +1017,8 @@ a i:hover {
     margin-top: 0.5rem;
   }
 
-  .max-\[480px\]\:block{
-    display: block;
-  }
-
-  .max-\[480px\]\:hidden{
-    display: none;
+  .max-\[480px\]\:mt-\[80px\]{
+    margin-top: 80px;
   }
 
   .max-\[480px\]\:w-\[320px\]{
