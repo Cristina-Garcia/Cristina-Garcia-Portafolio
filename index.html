@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,41 +19,54 @@
   </head>
   <body>
     <!-- <div class="observer-root-margin"></div> -->
-    <header class="header  bg-ligth-mode top-0 left-0 w-full z-10 m-0 p-0">
+    <header class="header bg-ligth-mode top-0 left-0 w-full z-10 m-0 p-0">
       <nav
-        class="navbar flex justify-between items-center p-5 border-b-1 border-b-gray-900 "
+        class="navbar flex justify-between items-center p-5 border-b-1 border-b-gray-900"
       >
-      <a href="./index.html">
-        <img
-          class="header-logo w-8 h-8 aspect-[1/1] object-cover rounded-full"
-          src="./src/img/mi-foto.jpg"
-          alt="Avatar del propietario del Portafolio"
-        />
-      </a>
+        <a href="./index.html">
+          <img
+            class="header-logo w-8 h-8 aspect-[1/1] object-cover rounded-full"
+            src="./src/img/mi-foto.jpg"
+            alt="Avatar del propietario del Portafolio"
+          />
+        </a>
         <div class="flex items-center">
-          <button class="mr-2 cursor-pointer" aria-label="Activar modo oscuro o claro">
-            <i class="fas fa-moon " id="switch"></i>
+          <button
+            class="mr-2 cursor-pointer"
+            aria-label="Activar modo oscuro o claro"
+          >
+            <i class="fas fa-moon" id="switch"></i>
           </button>
-          <div class="navbar-list flex items-center ml-4 ">
-          <button class="open-menu " aria-label="Abrir menu" >
-            <i class="fa-solid fa-bars text-black"></i>
-          </button>
-            <ul class="menu  font-light font-quicksand ">
+          <div class="navbar-list flex items-center ml-4">
+            <button class="open-menu" aria-label="Abrir menu">
+              <i class="fa-solid fa-bars text-black"></i>
+            </button>
+            <ul class="menu font-light font-quicksand">
               <button class="close-menu" aria-label="Cerrar-menu">
-                <i class="fa-solid fa-xmark "></i>
+                <i class="fa-solid fa-xmark"></i>
               </button>
-              <li class="hover:font-semibold"><a href="#Aboutme" >Sobre mí</a></li>
+              <li class="hover:font-semibold">
+                <a href="#Aboutme">Sobre mí</a>
+              </li>
               <li class="hover:font-semibold"><a href="#Skills">Skills</a></li>
-              <li class="hover:font-semibold"><a href="#Projects">Proyectos</a></li>
-              <li class="hover:font-semibold"><a href="#Contact">Contacto</a></li>
+              <li class="hover:font-semibold">
+                <a href="#Projects">Proyectos</a>
+              </li>
+              <li class="hover:font-semibold">
+                <a href="#Certificate">Certificados </a>
+              </li>
+              <li class="hover:font-semibold">
+                <a href="#Contact">Contacto</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="max-[480px]:mt-[80px]">
+    <main class="max-[480px]:mt-[70px]">
       <section
-        class="home flex flex-col justify-center items-center bg-banner bg-cover p-5 opacity-[0.9] h-80 bg-opacity-50" id="home"
+        class="home flex flex-col justify-center items-center bg-banner bg-cover p-5 opacity-[0.9] h-80 bg-opacity-50"
+        id="home"
       >
         <img
           class="w-32 h-32 aspect-[1/1] object-cover rounded-full"
@@ -66,23 +79,34 @@
           Cristina García Reyes
         </h1>
       </section>
-      <section class="about bg-Mystical-purple text-center text-black py-5 px-4 border-b-2 border-black" id="Aboutme">
-        <h2 class="font-techmono font-semibold text-2xl ">Acerca de mí</h2>
-        <p class="font-quicksand my-2 ">
-           Soy Agrónomo en Horticultura Protegida, estudiante de Desarrollo Web
-          Front-end.</br>Mi viaje en el mundo de la tecnología se dió mientras me desempeñaba como Agrónomo, con la falta de pequeños pero significativos programas para agilizar nuestro trabajo. Nació en mí el deseo de crear esas
-          tecnologias.</br> Aunque mi camino profesional comenzó en el campo, mi curiosidad y fascinación por el Desarrollo Front-end me llevó a indagar más y comenzar mi formación.</br> Actualmente la capacidad de dar vida a diseños y transformarlos en interfaces interactivas es lo que más me entusiasma. </br>Mi objetivo como Frontend Developer es
-          combinar mis conocimientos en horticultura con mi pasión por la
-          tecnología para desarrollar aplicaciones web que conecten
-          a las personas con soluciones útiles y significativas.
+      <section
+        class="about bg-Mystical-purple text-center text-black py-5 px-4 border-b-2 border-black"
+        id="Aboutme"
+      >
+        <h2 class="font-techmono font-bold text-2xl">Acerca de mí</h2>
+        <p class="font-quicksand my-2 font-semibold">
+          Soy Agrónomo en Horticultura Protegida, estudiante de Desarrollo Web
+          Front-end.<br />Mi viaje en el mundo de la tecnología se dió mientras
+          me desempeñaba como Agrónomo, con la falta de pequeños pero
+          significativos programas para agilizar nuestro trabajo. Nació en mí el
+          deseo de crear esas tecnologias.<br />
+          Aunque mi camino profesional comenzó en el campo, mi curiosidad y
+          fascinación por el Desarrollo Front-end me llevó a indagar más y
+          comenzar mi formación.<br />
+          Actualmente la capacidad de dar vida a diseños y transformarlos en
+          interfaces interactivas es lo que más me entusiasma. <br />Mi objetivo
+          como Frontend Developer es combinar mis conocimientos en horticultura
+          con mi pasión por la tecnología para desarrollar aplicaciones web que
+          conecten a las personas con soluciones útiles y significativas.
         </p>
       </section>
       <section
-        class="hobbies bg-Mystical-purple flex flex-col items-center text-black p-5" id="hobbies"
+        class="hobbies bg-Mystical-purple flex flex-col items-center text-black p-5"
+        id="hobbies"
       >
         <h2 class="font-techmono font-semibold text-2xl">Hobbies</h2>
 
-        <ul class="flex flex-wrap gap-5 mt-5">
+        <ul class="flex flex-wrap gap-5 mt-5 font-semibold">
           <li class="flex flex-col items-center justify-center">
             <img
               src="./src/img/libro-abierto.png"
@@ -107,7 +131,7 @@
             />
             <span>Escuchar música</span>
           </li>
-           <li class="flex flex-col items-center justify-center">
+          <li class="flex flex-col items-center justify-center">
             <img
               src="./src/img/cosecha.png"
               alt="Agricultor by Freepik"
@@ -130,6 +154,14 @@
               class="w-8"
             />
             <span>Cocinar </span>
+          </li>
+          <li class="flex flex-col items-center justify-center">
+            <img
+              src="./src/img/libro.png"
+              alt="libro (Estudiar japones) by Smashicons"
+              class="w-8"
+            />
+            <span>Aprender japones </span>
           </li>
         </ul>
       </section>
@@ -193,7 +225,7 @@
         class="formacion flex flex-col items-center text-center p-5 mt-5"
       >
         <h2 class="font-techmono font-semibold text-2xl">
-          Formación Academica
+          Formación Académica
         </h2>
         <div
           class="flex flex-wrap gap-5 mt-5 max-[480px]:flex-nowrap max-[480px]:flex-col"
@@ -225,27 +257,12 @@
             <p class="text-sm">Desarrollo Front End</p>
             <span class="text-xs">2023-Alura</span>
           </figure>
-          <figure class="flex flex-col justify-center items-center">
-            <img
-              class="w-12 h-12"
-              src="./src/img/faxt.png"
-              alt="Logo de Fazt"
-            />
-            <p class="text-sm">JavaScript</p>
-            <span class="text-xs">2023-Fazt</span>
-          </figure>
-          <figure class="flex flex-col justify-center items-center">
-            <img
-              class="w-12 h-12"
-              src="./src/img/midudev.png"
-              alt="Logo de midudev"
-            />
-            <p class="text-sm">React</p>
-            <span class="text-xs">2023-Midudev</span>
-          </figure>
         </div>
       </section>
-      <section class="proyectos flex flex-col items-center my-5 py-2" id="Projects">
+      <section
+        class="proyectos flex flex-col items-center my-5 py-2"
+        id="Projects"
+      >
         <h2 class="font-techmono font-semibold text-2xl">Mis Proyectos</h2>
         <div
           class="proyectos-list flex justify-center flex-wrap gap-10 px-5 mt-2"
@@ -260,27 +277,31 @@
                 de tu preferencia ya sea solo o con acompañantes. Proyecto
                 basado de diseño de Fronted Mentor
               </p>
-              <div class=" flex items-center justify-center gap-5 mt-2">
+              <div class="flex items-center justify-center gap-5 mt-2">
                 <a
                   href="https://github.com/Cristina-Garcia/tip-calculator-app-FM"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i></a>
+                  ><i class="fab fa-github"></i
+                ></a>
                 <a
                   href="https://cristina-garcia.github.io/tip-calculator-app-FM/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i></a>
+                  ><i class="fas fa-laptop-code"></i
+                ></a>
               </div>
             </div>
-            <figure class="proyect-container-img relative ">
+            <figure class="proyect-container-img relative">
               <img
                 class="w-64 object-cover"
                 src="./src/img/tip-calculator-app.png"
                 alt="Vista
               del proyecto tip calculator app"
               />
-              <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
                 <div class="flex gap-6">
                   <i class="fab fa-css3-alt scale-150"></i>
                   <i class="fab fa-html5 scale-150"></i>
@@ -298,17 +319,19 @@
                 Mostramos con gráficos de Chart.js, datos de gastos. Proyecto
                 basado en diseño de Fronted Mentor
               </p>
-              <div class=" flex items-center justify-center gap-5 mt-2">
+              <div class="flex items-center justify-center gap-5 mt-2">
                 <a
                   href="https://github.com/Cristina-Garcia/expenses-chartFM"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i></a>
+                  ><i class="fab fa-github"></i
+                ></a>
                 <a
                   href="https://cristina-garcia.github.io/expenses-chartFM/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i></a>
+                  ><i class="fas fa-laptop-code"></i
+                ></a>
               </div>
             </div>
             <div class="proyect-container-img relative">
@@ -317,7 +340,9 @@
                 src="./src/img/expense-chart.png"
                 alt="Vista del proyecto tip calculator app"
               />
-               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
                 <div class="flex gap-6">
                   <i class="fab fa-css3-alt scale-150"></i>
                   <i class="fab fa-html5 scale-150"></i>
@@ -335,17 +360,19 @@
                 Mostramos los personajes de las serie Rick and Morty desde una
                 API.
               </p>
-              <div class=" flex items-center justify-center gap-5 mt-2">
+              <div class="flex items-center justify-center gap-5 mt-2">
                 <a
                   href="https://github.com/Cristina-Garcia/react-ricky-and-morty-fazt"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i></a>
+                  ><i class="fab fa-github"></i
+                ></a>
                 <a
                   href="https://cristina-garcia.github.io/react-ricky-and-morty-fazt/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i></a>
+                  ><i class="fas fa-laptop-code"></i
+                ></a>
               </div>
             </div>
             <div class="proyect-container-img relative">
@@ -354,7 +381,9 @@
                 src="./src/img/Rick-and-morty-API.png"
                 alt="Vista del proyecto tip calculator app"
               />
-               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
                 <div class="flex gap-6">
                   <i class="fab fa-css3-alt scale-150"></i>
                   <i class="fab fa-html5 scale-150"></i>
@@ -373,17 +402,19 @@
                 la PokeAPI e integración de gráficos de Chart.js. Realizado con
                 LeonidasEsteban
               </p>
-              <div class=" flex items-center justify-center gap-5 mt-2">
+              <div class="flex items-center justify-center gap-5 mt-2">
                 <a
                   href="https://github.com/Cristina-Garcia/pokedexLE"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i></a>
+                  ><i class="fab fa-github"></i
+                ></a>
                 <a
                   href="https://cristina-garcia.github.io/pokedexLE/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i></a>
+                  ><i class="fas fa-laptop-code"></i
+                ></a>
               </div>
             </div>
             <div class="proyect-container-img relative">
@@ -392,7 +423,9 @@
                 src="./src/img/Pokedex.jpg"
                 alt="Vista del proyecto tip calculator app"
               />
-               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
                 <div class="flex gap-6">
                   <i class="fab fa-css3-alt scale-150"></i>
                   <i class="fab fa-html5 scale-150"></i>
@@ -410,17 +443,19 @@
                 Compra productos de tu preferencia desde la página web de tu
                 tienda favorita. Diseño de LeonidasEsteban
               </p>
-              <div class=" flex items-center justify-center gap-5 mt-2">
+              <div class="flex items-center justify-center gap-5 mt-2">
                 <a
                   href="https://github.com/Cristina-Garcia/Tiendita"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i></a>
+                  ><i class="fab fa-github"></i
+                ></a>
                 <a
                   href="https://cristina-garcia.github.io/Tiendita/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i></a>
+                  ><i class="fas fa-laptop-code"></i
+                ></a>
               </div>
             </div>
             <div class="proyect-container-img relative">
@@ -429,7 +464,9 @@
                 src="./src/img/tiendita.png"
                 alt="Vista del proyecto tip calculator app"
               />
-               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
                 <div class="flex gap-6">
                   <i class="fab fa-css3-alt scale-150"></i>
                   <i class="fab fa-html5 scale-150"></i>
@@ -447,17 +484,19 @@
                 Proyecto de encriptado y desencriptado de palabras o frases con
                 el programa ONE
               </p>
-              <div class=" flex items-center justify-center gap-5 mt-2">
+              <div class="flex items-center justify-center gap-5 mt-2">
                 <a
                   href="https://github.com/Cristina-Garcia/proyecto-encriptador-ONE"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i></a>
+                  ><i class="fab fa-github"></i
+                ></a>
                 <a
                   href="https://cristina-garcia.github.io/proyecto-encriptador-ONE/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i></a>
+                  ><i class="fas fa-laptop-code"></i
+                ></a>
               </div>
             </div>
             <div class="proyect-container-img relative">
@@ -466,7 +505,9 @@
                 src="./src/img/encriptador-desencriptador.png"
                 alt="Vista del proyecto tip calculator app"
               />
-               <div class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
                 <div class="flex gap-6">
                   <i class="fab fa-css3-alt scale-150"></i>
                   <i class="fab fa-html5 scale-150"></i>
@@ -477,8 +518,172 @@
           </div>
         </div>
       </section>
+      <section class="certificados px-4 py-2" id="Certificate">
+        <h2 class="font-techmono font-semibold text-2xl text-center">
+          Certificados
+        </h2>
+        <div class="certificados-list flex justify-center p-5 gap-2 flex-wrap">
+          <div class="w-64">
+            <figure class="certificate-container-img w-64 relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/certificados/taller-pokedex.png"
+                alt="Vista del certificado creeando una pokedex interactiva"
+              />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
+                <a
+                  href="https://leonidasesteban.com/certificados/c94018b3-06fd-4d1d-84e3-11a7f15821d5"
+                  class="flex"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+            </figure>
+            <p class="text-center font-quicksand">
+              Creando una Pokédex interactiva
+            </p>
+          </div>
+          <div class="w-64">
+            <figure class="certificate-container-img w-64 relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/certificados/curso-practico-javascript.png"
+                alt="Vista del certificado curso practico de javascript"
+              />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
+                <a href="https://platzi.com/p/CrisGre/" class="flex">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+            </figure>
+            <p class="text-center font-quicksand">
+              Curso practico de JavaScript
+            </p>
+          </div>
+          <div class="w-64">
+            <figure class="certificate-container-img w-64 relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/certificados/coursera-IT.png"
+                alt="Vista del certificado soporte de Tecnologías de la Información"
+              />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
+                <a
+                  href="https://www.coursera.org/account/accomplishments/professional-cert/YHKEDENVF7HZ"
+                  class="flex"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+            </figure>
+            <p class="text-center font-quicksand">
+              Soporte de Tecnologías de la Información de Google
+            </p>
+          </div>
+          <div class="w-64">
+            <figure class="certificate-container-img w-64 relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/certificados/principiante-programacion.png"
+                alt="Vista del certificado Principiante en programación"
+              />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
+                <a
+                  href="https://app.aluracursos.com/user/gre-cristina20/degree-programacion-primeros-pasos-grupo5-one-15570/certificate"
+                  class="flex"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+            </figure>
+            <p class="text-center font-quicksand">
+              Principiante en programación
+            </p>
+          </div>
+          <div class="w-64">
+            <figure class="certificate-container-img w-64 relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/certificados/front-end.png"
+                alt="Vista del certificado Front-end"
+              />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
+                <a
+                  href="https://app.aluracursos.com/user/gre-cristina20/degree-frontend-grupo5-one-15575/certificate"
+                  class="flex"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+              </div>
+            </figure>
+            <p class="text-center font-quicksand">Front-end</p>
+          </div>
+        </div>
+      </section>
+      <section class="sitios flex flex-col items-center text-center p-5 mt-5">
+        <h2 class="font-techmono font-semibold text-2xl">
+          Sitios y blogs de apoyo
+        </h2>
+        <div
+          class="flex flex-wrap gap-5 mt-5 max-[480px]:flex-nowrap max-[480px]:flex-col"
+        >
+          <figure class="flex flex-col justify-center items-center">
+            <img
+              class="w-12 h-12"
+              src="./src/img/faxt.png"
+              alt="Logo de Fazt"
+            />
+            <p class="text-md">Fazt</p>
+            <a href="https://www.faztweb.com/" target="_blank">
+              <span
+                class="text-xs font-bold text-Mystical-purple hover:font-extrabold cursor-pointer"
+                >Ir al sitio</span
+              >
+            </a>
+          </figure>
+          <figure class="flex flex-col justify-center items-center">
+            <img
+              class="w-12 h-12"
+              src="./src/img/midudev.png"
+              alt="Logo de midudev"
+            />
+            <p class="text-md">Midudev</p>
+            <a href="https://midu.dev/" target="_blank">
+              <span
+                class="text-xs font-bold text-Mystical-purple hover:font-extrabold cursor-pointer"
+                >Ir al sitio</span
+              >
+            </a>
+          </figure>
+          <figure class="flex flex-col justify-center items-center">
+            <img
+              class="w-12 h-12"
+              src="./src/img/freecodecamp2.png"
+              alt="Logo de midudev"
+            />
+            <p class="text-md">freeCodeCamp</p>
+            <a href="https://www.freecodecamp.org/espanol/" target="_blank">
+              <span
+                class="text-xs font-bold text-Mystical-purple hover:font-extrabold cursor-pointer"
+                >Ir al sitio</span
+              >
+            </a>
+          </figure>
+        </div>
+      </section>
       <section
-        class="contacto flex flex-col items-center my-5 py-2 k text-black" id="Contact"
+        class="contacto flex flex-col items-center my-5 py-2 k text-black"
+        id="Contact"
       >
         <div class="bg-Mystical-purple w-full text-center p-2">
           <h2 class="font-techmono font-semibold text-2xl">Contacto</h2>
@@ -486,54 +691,59 @@
           <p class="font-quicksand">Hagamosla real!</p>
         </div>
         <form
-        id="form-contact"
-          class="flex w-[520px] flex-col gap-3 mt-2 max-[768px]:px-5 max-[480px]:w-[320px]" autocomplete="on"
+          id="form-contact"
+          class="flex w-[520px] flex-col gap-3 mt-2 max-[768px]:px-5 max-[480px]:w-[320px]"
+          autocomplete="on"
         >
-        <div class="input-container  flex flex-col">
-          <input
-            type="text"
-            name="clientName"
-            placeholder="Name"
-            class="input-form p-2 border border-Mystical-purple outline-none" required
-            data-type="name"
-          />
-          <span class="input-message-alert"></span>
-        </div>
-        <div class="input-container flex flex-col">
-          <input
-            type="mailto"
-            name="email"
-            placeholder="Email"
-            class="input-form p-2 border border-Mystical-purple outline-none" required
-            data-type="email"
-          />
-          <span class="input-message-alert"></span>
-        </div>
-        <div class="input-container flex flex-col">
-          <textarea
-            name="subject"
-            id=""
-            rows="1"
-            placeholder="Subject"
-            class="input-form p-2 border border-Mystical-purple resize-none outline-none w-full" required
-            data-type="subject"
-          ></textarea>
-          <span class="input-message-alert"></span>
-
-        </div>
-        <div class="input-container flex flex-col">
-          <textarea
-            name="message"
-            id=""
-            rows="5"
-            placeholder="Message"
-            class="input-form p-2 border border-Mystical-purple resize-none outline-none w-full" required
-            data-type="message"
-          ></textarea>
-          <span class="input-message-alert"></span>
-        </div>
+          <div class="input-container flex flex-col">
+            <input
+              type="text"
+              name="clientName"
+              placeholder="Name"
+              class="input-form p-2 border border-Mystical-purple outline-none"
+              required
+              data-type="name"
+            />
+            <span class="input-message-alert"></span>
+          </div>
+          <div class="input-container flex flex-col">
+            <input
+              type="mailto"
+              name="email"
+              placeholder="Email"
+              class="input-form p-2 border border-Mystical-purple outline-none"
+              required
+              data-type="email"
+            />
+            <span class="input-message-alert"></span>
+          </div>
+          <div class="input-container flex flex-col">
+            <textarea
+              name="subject"
+              id=""
+              rows="1"
+              placeholder="Subject"
+              class="input-form p-2 border border-Mystical-purple resize-none outline-none w-full"
+              required
+              data-type="subject"
+            ></textarea>
+            <span class="input-message-alert"></span>
+          </div>
+          <div class="input-container flex flex-col">
+            <textarea
+              name="message"
+              id=""
+              rows="5"
+              placeholder="Message"
+              class="input-form p-2 border border-Mystical-purple resize-none outline-none w-full"
+              required
+              data-type="message"
+            ></textarea>
+            <span class="input-message-alert"></span>
+          </div>
           <button
-            class="bg-Mystical-purple hover:bg-Back-in-back rounded-md text-white p-2 mt-4" aria-label ="Enviar mensaje"
+            class="bg-Mystical-purple hover:bg-Back-in-back rounded-md text-white p-2 mt-4"
+            aria-label="Enviar mensaje"
           >
             Enviar Mensaje
           </button>
@@ -549,13 +759,22 @@
           <a href="" aria-label="Ir al instagram del candidato">
             <i class="fab fa-instagram fa-lg scale-150"></i>
           </a>
-          <a href="https://www.linkedin.com/in/cristina-garc%C3%ADa-679984144/" aria-label="Ir al linkedIn del candidato">
+          <a
+            href="https://www.linkedin.com/in/cristina-garc%C3%ADa-679984144/"
+            aria-label="Ir al linkedIn del candidato"
+          >
             <i class="fab fa-linkedin fa-lg scale-150"></i>
           </a>
-          <a href="mailto:gre.cristina20@gmail.com" aria-label="Enviar correo al candidato">
+          <a
+            href="mailto:gre.cristina20@gmail.com"
+            aria-label="Enviar correo al candidato"
+          >
             <i class="far fa-envelope fa-lg scale-150"></i>
           </a>
-          <a href="https://github.com/Cristina-Garcia" aria-label="Ir a ala cuenta de Github del candidato">
+          <a
+            href="https://github.com/Cristina-Garcia"
+            aria-label="Ir a ala cuenta de Github del candidato"
+          >
             <i class="fab fa-github fa-lg scale-150"></i>
           </a>
         </div>

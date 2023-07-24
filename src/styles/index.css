@@ -31,6 +31,7 @@ a i:hover {
   transition: opacity 0.4s ease-in-out;
 }
 
+.certificate-container-img:hover .overlay,
 .proyect-container-img:hover .overlay {
   opacity: 0.6;
 }
@@ -45,7 +46,9 @@ a i:hover {
   right: 0;
   bottom: 70%;
 } */
-
+.certificate-container-img img {
+  border: 1px solid #725f84;
+}
 /* Form alerts */
 .input-container--invalid .input-form {
   border: 1px solid #d21502;
