@@ -751,6 +751,11 @@ video {
   background-color: rgb(251 251 254 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -867,6 +872,11 @@ video {
 .text-Mystical-purple{
   --tw-text-opacity: 1;
   color: rgb(114 95 132 / var(--tw-text-opacity));
+}
+
+.text-\[\#eaae44\]{
+  --tw-text-opacity: 1;
+  color: rgb(234 174 68 / var(--tw-text-opacity));
 }
 
 .text-black{
@@ -1015,12 +1025,22 @@ a i:hover {
   background-color: rgb(31 26 36 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#eaae44\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 174 68 / var(--tw-bg-opacity));
+}
+
 .hover\:font-extrabold:hover{
   font-weight: 800;
 }
 
 .hover\:font-semibold:hover{
   font-weight: 600;
+}
+
+.hover\:text-\[\#eaae44\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(234 174 68 / var(--tw-text-opacity));
 }
 
 @media (max-width: 768px){
@@ -1033,26 +1053,6 @@ a i:hover {
 @media (max-width: 480px){
   .max-\[480px\]\:mt-2{
     margin-top: 0.5rem;
-  }
-
-  .max-\[480px\]\:mt-\[80px\]{
-    margin-top: 80px;
-  }
-
-  .max-\[480px\]\:mt-\[180px\]{
-    margin-top: 180px;
-  }
-
-  .max-\[480px\]\:mt-\[260px\]{
-    margin-top: 260px;
-  }
-
-  .max-\[480px\]\:mt-\[160px\]{
-    margin-top: 160px;
-  }
-
-  .max-\[480px\]\:mt-\[60px\]{
-    margin-top: 60px;
   }
 
   .max-\[480px\]\:mt-\[70px\]{

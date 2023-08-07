@@ -68,16 +68,37 @@
         class="home flex flex-col justify-center items-center bg-banner bg-cover p-5 opacity-[0.9] h-80 bg-opacity-50"
         id="home"
       >
-        <img
-          class="w-32 h-32 aspect-[1/1] object-cover rounded-full"
-          src="./src/img/mi-foto.jpg"
-          alt="Avatar del propietario del portafolio"
-        />
-        <h1
-          class="title font-rubik text-3xl text-text-ligth font-medium mt-5 z-10 max-[480px]:text-center"
-        >
-          Cristina García Reyes
-        </h1>
+        <div class="flex flex-col justify-center items-center">
+          <img
+            class="w-32 h-32 aspect-[1/1] object-cover rounded-full"
+            src="./src/img/mi-foto.jpg"
+            alt="Avatar del propietario del portafolio"
+          />
+          <h1
+            class="title font-rubik text-3xl text-text-ligth font-medium mt-5 z-10 max-[480px]:text-center"
+          >
+            Cristina García Reyes
+          </h1>
+          <div class="mt-5 flex items-center justify-center gap-5">
+            <a
+              href="https://github.com/Cristina-Garcia"
+              aria-label="Ir a ala cuenta de Github del candidato"
+              target="_blank"
+            >
+              <i
+                class="fab fa-github fa-lg scale-150 text-white hover:text-[#eaae44]"
+              ></i>
+            </a>
+            <div
+              class="rounded-md text-md font-semibold bg-white hover:bg-[#eaae44]"
+              style="padding: 0.7rem"
+            >
+              <a href="./src/assets/Cristina-Garcia-cv.pdf" target="_blank"
+                >Curriculum</a
+              >
+            </div>
+          </div>
+        </div>
       </section>
       <section
         class="about bg-Mystical-purple text-center text-black py-5 px-4 border-b-2 border-black"
@@ -86,7 +107,7 @@
         <h2 class="font-techmono font-bold text-2xl">Acerca de mí</h2>
         <p class="font-quicksand my-2 font-semibold">
           Soy Agrónomo en Horticultura Protegida, estudiante de Desarrollo Web
-          Front-end.<br />Mi viaje en el mundo de la tecnología se dió mientras
+          Frontend.<br />Mi viaje en el mundo de la tecnología se dió mientras
           me desempeñaba como Agrónomo, con la falta de pequeños pero
           significativos programas para agilizar nuestro trabajo. Nació en mí el
           deseo de crear esas tecnologias.<br />
@@ -161,7 +182,7 @@
               alt="libro (Estudiar japones) by Smashicons"
               class="w-8"
             />
-            <span>Aprender japones </span>
+            <span>Aprender japonés </span>
           </li>
         </ul>
       </section>
@@ -267,7 +288,7 @@
         <div
           class="proyectos-list flex justify-center flex-wrap gap-10 px-5 mt-2"
         >
-          <div
+          <article
             class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
           >
             <div class="w-48 p-2">
@@ -309,8 +330,8 @@
                 </div>
               </div>
             </figure>
-          </div>
-          <div
+          </article>
+          <article
             class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
           >
             <div class="w-48 p-2">
@@ -338,7 +359,7 @@
               <img
                 class="w-64 object-cover"
                 src="./src/img/expense-chart.png"
-                alt="Vista del proyecto tip calculator app"
+                alt="Vista del proyecto expense-chart"
               />
               <div
                 class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
@@ -350,49 +371,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
-          >
-            <div class="w-48 p-2">
-              <h3 class="text-center font-semibold">Rick and Morty</h3>
-              <p class="text-sm text-justify pt-2">
-                Mostramos los personajes de las serie Rick and Morty desde una
-                API.
-              </p>
-              <div class="flex items-center justify-center gap-5 mt-2">
-                <a
-                  href="https://github.com/Cristina-Garcia/react-ricky-and-morty-fazt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://cristina-garcia.github.io/react-ricky-and-morty-fazt/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i
-                ></a>
-              </div>
-            </div>
-            <div class="proyect-container-img relative">
-              <img
-                class="w-64 object-cover"
-                src="./src/img/Rick-and-morty-API.png"
-                alt="Vista del proyecto tip calculator app"
-              />
-              <div
-                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
-              >
-                <div class="flex gap-6">
-                  <i class="fab fa-css3-alt scale-150"></i>
-                  <i class="fab fa-html5 scale-150"></i>
-                  <i class="fab fa-react scale-150"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
+          </article>
+          <article
             class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
           >
             <div class="w-48 p-2">
@@ -421,7 +401,7 @@
               <img
                 class="w-64 object-cover"
                 src="./src/img/Pokedex.jpg"
-                alt="Vista del proyecto tip calculator app"
+                alt="Vista del proyecto pokedex"
               />
               <div
                 class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
@@ -433,56 +413,15 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
-          >
-            <div class="w-48 p-2">
-              <h3 class="text-center font-semibold">Tiendita</h3>
-              <p class="text-sm text-justify pt-2">
-                Compra productos de tu preferencia desde la página web de tu
-                tienda favorita. Diseño de LeonidasEsteban
-              </p>
-              <div class="flex items-center justify-center gap-5 mt-2">
-                <a
-                  href="https://github.com/Cristina-Garcia/Tiendita"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://cristina-garcia.github.io/Tiendita/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i
-                ></a>
-              </div>
-            </div>
-            <div class="proyect-container-img relative">
-              <img
-                class="w-64"
-                src="./src/img/tiendita.png"
-                alt="Vista del proyecto tip calculator app"
-              />
-              <div
-                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
-              >
-                <div class="flex gap-6">
-                  <i class="fab fa-css3-alt scale-150"></i>
-                  <i class="fab fa-html5 scale-150"></i>
-                  <i class="fab fa-js scale-150"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          </article>
+          <article
+            class="flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
           >
             <div class="w-48 p-2">
               <h3 class="text-center font-semibold">Encriptador</h3>
               <p class="text-sm text-justify pt-2">
-                Proyecto de encriptado y desencriptado de palabras o frases con
-                el programa ONE
+                Proyecto de encriptado y desencriptado de palabras o frases.
+                Diseño base creado por Alura
               </p>
               <div class="flex items-center justify-center gap-5 mt-2">
                 <a
@@ -503,7 +442,7 @@
               <img
                 class="w-64"
                 src="./src/img/encriptador-desencriptador.png"
-                alt="Vista del proyecto tip calculator app"
+                alt="Vista del proyecto desencriptador"
               />
               <div
                 class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
@@ -515,7 +454,91 @@
                 </div>
               </div>
             </div>
-          </div>
+          </article>
+          <article
+            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          >
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Ecommerce Alura</h3>
+              <p class="text-sm text-justify pt-2">
+                Proyecto de práctica para CRUD, datos almacenados en mockAPI.
+                Podemos hacer la busqueda de artículos. Como administradores,
+                acceso a edición y eliminación de productos así como también de
+                agregar nuevos. Diseño base de Alura
+              </p>
+              <div class="flex items-center justify-center gap-5 mt-2">
+                <a
+                  href="https://github.com/Cristina-Garcia/challenge-ecommerce-ONE5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://challenge-ecommerce-one-5.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-laptop-code"></i
+                ></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img
+                class="w-64"
+                src="./src/img/challenge-ecommerce-one5.png"
+                alt="Vista del proyecto Ecommerce Alura"
+              />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-js scale-150"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
+          >
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Rick and Morty</h3>
+              <p class="text-sm text-justify pt-2">
+                Mostramos los personajes de las serie Rick and Morty desde una
+                API.
+              </p>
+              <div class="flex items-center justify-center gap-5 mt-2">
+                <a
+                  href="https://github.com/Cristina-Garcia/react-ricky-and-morty-fazt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://cristina-garcia.github.io/react-ricky-and-morty-fazt/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-laptop-code"></i
+                ></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img
+                class="w-64 object-cover"
+                src="./src/img/Rick-and-morty-API.png"
+                alt="Vista del proyecto Rick and morty"
+              />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
+              >
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-react scale-150"></i>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
       <section class="certificados px-4 py-2" id="Certificate">
@@ -634,7 +657,7 @@
                 </a>
               </div>
             </figure>
-            <p class="text-center font-quicksand">Front-end</p>
+            <p class="text-center font-quicksand">Frontend</p>
           </div>
         </div>
       </section>
