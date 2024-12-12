@@ -63,9 +63,9 @@
         </div>
       </nav>
     </header>
-    <main class="max-[480px]:mt-[70px]">
+    <main class="w-full  max-w-7xl max-[480px]:mt-[70px]">
       <section
-        class="home flex flex-col justify-center items-center bg-banner bg-cover p-5 opacity-[0.9] h-80 bg-opacity-50"
+        class="home max-w-7xl flex flex-col justify-center items-center bg-banner bg-cover p-5 opacity-[0.9] h-80 bg-opacity-50"
         id="home"
       >
         <div class="flex flex-col justify-center items-center">
@@ -122,7 +122,7 @@
         </p>
       </section>
       <section
-        class="hobbies bg-Mystical-purple flex flex-col items-center text-black p-5"
+        class="hobbies max-w-7xl  bg-Mystical-purple flex flex-col items-center text-black p-5"
         id="hobbies"
       >
         <h2 class="font-techmono font-semibold text-2xl">Hobbies</h2>
@@ -186,7 +186,7 @@
           </li>
         </ul>
       </section>
-      <section class="skills flex flex-col items-center my-5 py-2" id="Skills">
+      <section class="skills max-w-7xl flex flex-col items-center my-5 py-2" id="Skills">
         <h2 class="font-techmono text-2xl font-semibold">Skills</h2>
         <ul
           class="flex flex-wrap gap-5 justify-between p-5 max-[480px]:flex-nowrap max-[480px]:flex-col"
@@ -243,7 +243,7 @@
         </ul>
       </section>
       <section
-        class="formacion flex flex-col items-center text-center p-5 mt-5"
+        class="formacion max-w-7xl flex flex-col items-center text-center p-5 mt-5"
       >
         <h2 class="font-techmono font-semibold text-2xl">
           Formación Académica
@@ -281,19 +281,74 @@
         </div>
       </section>
       <section
-        class="proyectos flex flex-col items-center my-5 py-2"
+        class="proyectos max-w-7xl flex flex-col items-center my-5 py-2"
         id="Projects"
       >
         <h2 class="font-techmono font-semibold text-2xl">Mis Proyectos</h2>
         <div
           class="proyectos-list flex justify-center flex-wrap gap-10 px-5 mt-2"
         >
+          <article class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col">
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Ecommerce Alura</h3>
+              <p class="text-sm text-center text-balance pt-2">
+                Proyecto de práctica para CRUD, datos almacenados en mockAPI.
+                Podemos hacer la busqueda de artículos. Como administradores,
+                acceso a edición y eliminación de productos así como también de
+                agregar nuevos. Diseño base de Alura
+              </p>
+              <div class="flex items-center justify-center gap-5 mt-2">
+                <a href="https://github.com/Cristina-Garcia/challenge-ecommerce-ONE5" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i></a>
+                <a href="https://challenge-ecommerce-one-5.vercel.app/" target="_blank" rel="noopener noreferrer"><i
+                    class="fas fa-laptop-code"></i></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img class="w-64" src="./src/img/challenge-ecommerce-one5.png" alt="Vista del proyecto Ecommerce Alura" />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="fab fa-js scale-150"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col">
+            <div class="w-48 p-2">
+              <h3 class="text-center font-semibold">Space tourism</h3>
+              <p class="text-sm text-center text-balance pt-2">
+                Proyecto de práctica realizado con el framework Astro, donde creé layouts, páginas y componentes reutilizables.
+                Apliqué
+                JavaScript de manera modular y utilicé Sass para la gestión de estilos. Diseño base de Frontend Mentor
+              </p>
+              <div class="flex items-center justify-center gap-5 mt-2">
+                <a href="https://github.com/Cristina-Garcia/space-tourism-astro" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i></a>
+                <a href="https://stupendous-flan-e1243b.netlify.app/" target="_blank" rel="noopener noreferrer"><i
+                    class="fas fa-laptop-code"></i></a>
+              </div>
+            </div>
+            <div class="proyect-container-img relative">
+              <img class="w-64 object-cover" src="./src/img/space_tourism_fm.png" alt="Vista del proyecto Space tourism" />
+              <div
+                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold">
+                <div class="flex gap-6">
+                  <i class="fab fa-css3-alt scale-150"></i>
+                  <i class="fab fa-html5 scale-150"></i>
+                  <i class="astro"></i>
+                </div>
+              </div>
+            </div>
+          </article>
           <article
             class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
           >
             <div class="w-48 p-2">
               <h3 class="text-center font-semibold">Tip calculator App</h3>
-              <p class="text-sm text-justify pt-2">
+              <p class="text-sm text-center text-balance pt-2">
                 Aplicación que te ayuda a calcular el monto de propina a pagar
                 de tu preferencia ya sea solo o con acompañantes. Proyecto
                 basado de diseño de Fronted Mentor
@@ -336,7 +391,7 @@
           >
             <div class="w-48 p-2">
               <h3 class="text-center font-semibold">Expense Chart</h3>
-              <p class="text-sm text-justify pt-2">
+              <p class="text-sm text-center text-balance pt-2">
                 Mostramos con gráficos de Chart.js, datos de gastos. Proyecto
                 basado en diseño de Fronted Mentor
               </p>
@@ -377,7 +432,7 @@
           >
             <div class="w-48 p-2">
               <h3 class="text-center font-semibold">Pokedex</h3>
-              <p class="text-sm text-justify pt-2">
+              <p class="text-sm text-center text-balance pt-2">
                 Conoce más sobre tus pokemones favoritos. Datos recibidos desde
                 la PokeAPI e integración de gráficos de Chart.js. Realizado con
                 LeonidasEsteban
@@ -419,7 +474,7 @@
           >
             <div class="w-48 p-2">
               <h3 class="text-center font-semibold">Encriptador</h3>
-              <p class="text-sm text-justify pt-2">
+              <p class="text-sm text-center text-balance pt-2">
                 Proyecto de encriptado y desencriptado de palabras o frases.
                 Diseño base creado por Alura
               </p>
@@ -455,93 +510,10 @@
               </div>
             </div>
           </article>
-          <article
-            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
-          >
-            <div class="w-48 p-2">
-              <h3 class="text-center font-semibold">Ecommerce Alura</h3>
-              <p class="text-sm text-justify pt-2">
-                Proyecto de práctica para CRUD, datos almacenados en mockAPI.
-                Podemos hacer la busqueda de artículos. Como administradores,
-                acceso a edición y eliminación de productos así como también de
-                agregar nuevos. Diseño base de Alura
-              </p>
-              <div class="flex items-center justify-center gap-5 mt-2">
-                <a
-                  href="https://github.com/Cristina-Garcia/challenge-ecommerce-ONE5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://challenge-ecommerce-one-5.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i
-                ></a>
-              </div>
-            </div>
-            <div class="proyect-container-img relative">
-              <img
-                class="w-64"
-                src="./src/img/challenge-ecommerce-one5.png"
-                alt="Vista del proyecto Ecommerce Alura"
-              />
-              <div
-                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
-              >
-                <div class="flex gap-6">
-                  <i class="fab fa-css3-alt scale-150"></i>
-                  <i class="fab fa-html5 scale-150"></i>
-                  <i class="fab fa-js scale-150"></i>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article
-            class="proyect flex w-full items-center border-2 border-Mystical-purple p-2 max-w-max max-[480px]:flex-col"
-          >
-            <div class="w-48 p-2">
-              <h3 class="text-center font-semibold">Rick and Morty</h3>
-              <p class="text-sm text-justify pt-2">
-                Mostramos los personajes de las serie Rick and Morty desde una
-                API.
-              </p>
-              <div class="flex items-center justify-center gap-5 mt-2">
-                <a
-                  href="https://github.com/Cristina-Garcia/react-ricky-and-morty-fazt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://cristina-garcia.github.io/react-ricky-and-morty-fazt/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-laptop-code"></i
-                ></a>
-              </div>
-            </div>
-            <div class="proyect-container-img relative">
-              <img
-                class="w-64 object-cover"
-                src="./src/img/Rick-and-morty-API.png"
-                alt="Vista del proyecto Rick and morty"
-              />
-              <div
-                class="overlay absolute w-full h-full flex items-center justify-center top-0 left-0 cursor-pointer text-white font-extrabold"
-              >
-                <div class="flex gap-6">
-                  <i class="fab fa-css3-alt scale-150"></i>
-                  <i class="fab fa-html5 scale-150"></i>
-                  <i class="fab fa-react scale-150"></i>
-                </div>
-              </div>
-            </div>
-          </article>
+
         </div>
       </section>
-      <section class="certificados px-4 py-2" id="Certificate">
+      <section class="certificados max-w-7xl px-4 py-2" id="Certificate">
         <h2 class="font-techmono font-semibold text-2xl text-center">
           Certificados
         </h2>
@@ -661,7 +633,7 @@
           </div>
         </div>
       </section>
-      <section class="sitios flex flex-col items-center text-center p-5 mt-5">
+      <section class="sitios max-w-7xl flex flex-col items-center text-center p-5 mt-5">
         <h2 class="font-techmono font-semibold text-2xl">
           Sitios y blogs de apoyo
         </h2>
@@ -713,7 +685,7 @@
         </div>
       </section>
       <section
-        class="contacto flex flex-col items-center my-5 py-2 k text-black"
+        class="contacto max-w-7xl flex flex-col items-center my-5 py-2 k text-black"
         id="Contact"
       >
         <div class="bg-Mystical-purple w-full text-center p-2">
